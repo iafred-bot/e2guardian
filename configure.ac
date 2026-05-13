@@ -239,6 +239,7 @@ else
 AC_CHECK_FUNCS([regcomp])
 fi
 AM_CONDITIONAL(HAVE_PCRE, test "x$pcre" = "xtrue")
+AM_CONDITIONAL(HAVE_PCRE, test "x$pcre" = "xtrue")
 
 AC_CHECK_HEADERS([pthread.h], [ LIBS="-lpthread ${LIBS}"], [
 echo "pthread.h required, failing"
@@ -591,4 +592,3 @@ src/Makefile
 ])
 
 AC_OUTPUT
-
